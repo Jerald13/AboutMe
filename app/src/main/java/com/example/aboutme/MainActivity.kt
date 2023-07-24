@@ -28,7 +28,18 @@ class MainActivity : AppCompatActivity() {
             addNickName(it)
         }
 
+        binding.nicknameText.setOnClickListener{
+            editNickName(it)
+        }
 
+    }
+
+    private fun editNickName(view: View){
+        binding.nicknameEdit.visibility = View.VISIBLE
+        binding.doneButton.visibility = View.VISIBLE
+        binding.nicknameText.visibility = View.GONE
+
+//        binding.nicknameText.visibility =
     }
 
     private fun addNickName(view: View) {
